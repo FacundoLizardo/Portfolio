@@ -4,6 +4,7 @@
 	align-items: center;
 	width: 55%;
 	height: auto;
+	border: solid 2px black;
 }
 
 .head {
@@ -22,26 +23,38 @@
 	display: flex;
 	flex-direction: row;
 	margin: 0px;
+	justify-content: space-around;
 }
 
 .profilePic {
-	height: 15vh;
-	width: auto;
-	border-radius: 200px;
-	margin: 2% 10% 2% 0%;
+	max-width: 30%; /* Hacer que la imagen no exceda el ancho del contenedor */
+	height: auto; /* Ajustar la altura proporcionalmente al ancho */
+	border-radius: 100%; /* Usar 50% para obtener un círculo perfecto con border-radius */
+	margin: 2% 0 2% 0; /* Simplificar el margen */
+
+	/* Estilos adicionales si lo deseas */
+	/*display: block;  Evitar espacio adicional debajo de la imagen */
+	margin-left: 0px; /* Centrar la imagen horizontalmente */
+	margin-right: 10%;
+}
+.name {
+	padding: 0;
+	font-weight: 100;
+	font-size: 3em; /* Tamaño base del texto */
+	margin-bottom: 2vh;
+	margin-top: 0;
 }
 
-.name {
-	padding: 0px;
-	font-weight: 100;
-	font-size: 250%;
-	margin-bottom: 2vh;
-	margin-top: 0px;
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+	.name {
+		font-size: 2em; /* Ajustar tamaño del texto para pantallas pequeñas */
+	}
 }
 
 .division {
 	margin-top: 5vh;
-	width: 35vw;
+	width: 50vw;
 	height: 0px;
 	border: solid 1px #ffffff;
 	border-radius: 3px;
@@ -65,4 +78,8 @@
 .gitHubLogo:hover {
 	transform: scale(1.1);
 	cursor: pointer;
+}
+
+.personalDescription {
+	margin: 5vw;
 }
