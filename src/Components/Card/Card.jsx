@@ -1,11 +1,10 @@
-import imgEducaStreamLogo from "../../../assets/Images/imgLogos/educaStreamLogo.png";
 import style from "../Card/Card.module.css";
 const Card = ({ project }) => {
-	console.log(project);
+	const { id, title, img, url, logo } = project;
+
 	return (
 		<div className={style.card} key={project.id}>
-			<img src={imgEducaStreamLogo}></img>
-			{/* <div className={style.cardDeploy}>
+			<div className={style.cardDeploy}>
 				<a href={url} target="_blank" rel="noopener noreferrer"></a>
 			</div>
 			<div className={style.cardTop}>
@@ -15,7 +14,7 @@ const Card = ({ project }) => {
 			<div className={style.cardButton}>
 				<img src={logo} alt={logo} />
 				<h3>{title} </h3>
-			</div> */}
+			</div>
 		</div>
 	);
 };

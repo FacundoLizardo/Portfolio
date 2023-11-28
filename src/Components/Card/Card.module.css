@@ -2,7 +2,7 @@
 	width: 240px;
 	height: 200px;
 	overflow: hidden;
-	border: 1px solid black;
+
 	font-size: 12px;
 	color: black;
 	position: relative;
@@ -17,6 +17,8 @@
 .cardDeploy {
 	display: none;
 	cursor: pointer;
+	border: solid 2px black;
+	margin: 5px;
 }
 
 .cardDeploy a svg {
