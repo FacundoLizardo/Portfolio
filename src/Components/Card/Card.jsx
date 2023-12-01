@@ -4,12 +4,14 @@ const Card = ({ project }) => {
 
 	return (
 		<div className={style.card} key={project.id}>
-			<div className={style.cardDeploy}>
-				<a href={url} target="_blank" rel="noopener noreferrer"></a>
-			</div>
-			<div className={style.cardTop}>
-				<img src={img} alt={title} />
-			</div>
+			<div className={style.cardDeploy}></div>
+
+			<a href={url} target="_blank" rel="noopener noreferrer">
+				<div className={style.cardTop}>
+					{" "}
+					<img src={img} alt={title} />
+				</div>
+			</a>
 
 			<div className={style.cardButton}>
 				<img src={logo} alt={logo} />
