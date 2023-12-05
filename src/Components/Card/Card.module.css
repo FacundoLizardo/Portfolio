@@ -1,5 +1,5 @@
 .card {
-	width: 300px;
+	width: 350px;
 	height: auto;
 	overflow: hidden;
 
@@ -8,11 +8,11 @@
 	position: relative;
 	transition: all 0.2s ease;
 	border-radius: 5px;
-	margin: 2%;
+	margin: 5%;
 }
 
 .card:hover {
-	transform: scale(0.96);
+	transform: scale(1.03);
 }
 
 .cardDeploy {

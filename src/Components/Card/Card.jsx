@@ -4,8 +4,6 @@ const Card = ({ project }) => {
 
 	return (
 		<div className={style.card} key={project.id}>
-			<div className={style.cardDeploy}></div>
-
 			<a href={url} target="_blank" rel="noopener noreferrer">
 				<div className={style.cardTop}>
 					{" "}

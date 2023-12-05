@@ -30,7 +30,7 @@ const Home = () => {
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 256 256"
 									id="linkedin-logo"
-									height="60"
+									height="80"
 									className={styles.linkedinLogo}
 								>
 									<rect width="256" height="256" fill="none" />
@@ -77,7 +77,7 @@ const Home = () => {
 									fill="none"
 									stroke="#ffffff"
 									viewBox="0 0 64 64"
-									height="53"
+									height="70"
 									className={styles.gitHubLogo}
 								>
 									<path
@@ -112,8 +112,8 @@ const Home = () => {
 							<a>
 								<svg
 									fill="#ffffff"
-									height="45px"
-									width="45px"
+									height="56px"
+									width="56px"
 									viewBox="0 0 512 512"
 									className={styles.cv}
 								>
@@ -164,33 +164,38 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-
 				{/* <div className={styles.division} /> */}
-
-				<p className={styles.personalDescription}>
-					En las profundidades del universo, donde las estrellas bailan en un
-					ballet cósmico, surge una sinfonía de misterios insondables. Planetas
-					danzan alrededor de soles ancianos, tejendo historias en las telas del
-					espacio-tiempo. En este vasto lienzo estelar, la curiosidad es la
-					brújula que guía a mentes exploradoras. En un rincón remoto de la
-					galaxia, una civilización de seres luminosos desarrolla tecnologías
-					que desafían las leyes conocidas de la física. Sus ciudades flotan
-					sobre nubes de energía, y sus pensamientos se entrelazan en una red de
-					conocimiento colectivo. Exploran los rincones más oscuros del cosmos,
-					desentrañando enigmas que desafían la comprensión humana. Mientras
-					tanto, en un pequeño planeta azul, criaturas curiosas exploran su
-					propio entorno. Sus ciudades brillan con luces que cuentan historias
-					de logros y desafíos. La naturaleza se convierte en su maestra,
-					enseñándoles lecciones de resiliencia y cooperación. Aunque sus
-					destinos están entrelazados con los hilos del cosmos, su enfoque en la
-					vida cotidiana revela la belleza de lo simple. En el espacio
-					interdimensional, se entrelazan realidades alternas. Seres de energía
-					pura coexisten con formas de vida que desafían las leyes biológicas.
-					Las fronteras entre lo real y lo imaginario se desdibujan, dando paso
-					a posibilidades infinitas. En este caos creativo, se gestan nuevas
-					formas de existencia que desafían cualquier descripción convencional.
-				</p>
-				<Projects />
+				<section className={styles.personalDescription}>
+					{" "}
+					<p>
+						En las profundidades del universo, donde las estrellas bailan en un
+						ballet cósmico, surge una sinfonía de misterios insondables.
+						Planetas danzan alrededor de soles ancianos, tejendo historias en
+						las telas del espacio-tiempo. En este vasto lienzo estelar, la
+						curiosidad es la brújula que guía a mentes exploradoras. En un
+						rincón remoto de la galaxia, una civilización de seres luminosos
+						desarrolla tecnologías que desafían las leyes conocidas de la
+						física. Sus ciudades flotan sobre nubes de energía, y sus
+						pensamientos se entrelazan en una red de conocimiento colectivo.
+						Exploran los rincones más oscuros del cosmos, desentrañando enigmas
+						que desafían la comprensión humana. Mientras tanto, en un pequeño
+						planeta azul, criaturas curiosas exploran su propio entorno. Sus
+						ciudades brillan con luces que cuentan historias de logros y
+						desafíos. La naturaleza se convierte en su maestra, enseñándoles
+						lecciones de resiliencia y cooperación. Aunque sus destinos están
+						entrelazados con los hilos del cosmos, su enfoque en la vida
+						cotidiana revela la belleza de lo simple. En el espacio
+						interdimensional, se entrelazan realidades alternas. Seres de
+						energía pura coexisten con formas de vida que desafían las leyes
+						biológicas. Las fronteras entre lo real y lo imaginario se
+						desdibujan, dando paso a posibilidades infinitas. En este caos
+						creativo, se gestan nuevas formas de existencia que desafían
+						cualquier descripción convencional.
+					</p>
+				</section>
+				<section className={styles.projects}>
+					<Projects />
+				</section>
 			</div>
 		</div>
 	);

@@ -1,6 +1,6 @@
 .mainContainer {
-	height: 300px;
-	border: solid 2px black;
+	height: 50%;
+	margin: 5%;
 	display: flex;
 	flex-direction: row;
 }
