@@ -1,28 +1,54 @@
 import styles from "./home.module.css";
-
+import { useRef } from "react";
 import man from "../../assets/Images/man.avif";
 import Projects from "../Components/Projects/Projects";
 
 const Home = () => {
-	console.log(typeof cv);
+	const sectionHead = useRef(null);
+	const sectionDescirption = useRef(null);
+	const sectionProjects = useRef(null);
+	// Agrega más referencias para cada sección según sea necesario
+
+	const scrollToSection = (ref) => {
+		console.log(ref);
+		console.log("hola");
+		if (ref.current) {
+			ref.current.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
 		<div className={styles.mainContainer}>
 			<div className={styles.lSide}>
 				<img src={man} className={styles.profilePic} />
-				<ul className={styles.list}>
-					<li>Links</li>
-					<li>Sobre mi</li>
-					<li>Proyectos</li>
-					<li>Tecnologias</li>
-				</ul>
+
+				<h3
+					onClick={() => scrollToSection(sectionHead)}
+					className={styles.listE}
+				>
+					Links
+				</h3>
+				<h3
+					onClick={() => scrollToSection(sectionDescirption)}
+					className={styles.listE}
+				>
+					Sobre mi
+				</h3>
+				<h3
+					onClick={() => scrollToSection(sectionProjects)}
+					className={styles.listE}
+				>
+					Proyectos
+				</h3>
+				<h3 className={styles.listE}>Tecnologias</h3>
 			</div>
 			<div className={styles.rSide}>
-				<div className={styles.head}>
+				<div className={styles.head} ref={sectionHead}>
 					<div className={styles.nameAndLinks}>
 						<h2 className={styles.name}>Facundo Lizardo</h2>
 						<div className={styles.links}>
 							<a
-								href={"www.linkedin.com/in/facundolizardo"}
+								href={"https://www.linkedin.com/in/facundolizardo/"}
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -71,7 +97,11 @@ const Home = () => {
 									<circle cx="88" cy="80" r="8" fill="#ffffff" />
 								</svg>
 							</a>
-							<a>
+							<a
+								href={"https://github.com/FacundoLizardo"}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
@@ -109,7 +139,13 @@ const Home = () => {
 								</svg>
 							</a>
 
-							<a>
+							<a
+								href={
+									"https://docs.google.com/document/d/1ZFe7vaJfPOXd_lmddXrbIjsafCzxjSk5vcgBnBeCY9I/edit"
+								}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<svg
 									fill="#ffffff"
 									height="56px"
@@ -164,10 +200,13 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-				{/* <div className={styles.division} /> */}
-				<section className={styles.personalDescription}>
+
+				<section
+					className={styles.personalDescription}
+					ref={sectionDescirption}
+				>
 					{" "}
-					<p>
+					<p className={styles.parrafo}>
 						En las profundidades del universo, donde las estrellas bailan en un
 						ballet cósmico, surge una sinfonía de misterios insondables.
 						Planetas danzan alrededor de soles ancianos, tejendo historias en
@@ -193,7 +232,7 @@ const Home = () => {
 						cualquier descripción convencional.
 					</p>
 				</section>
-				<section className={styles.projects}>
+				<section className={styles.projects} ref={sectionProjects}>
 					<Projects />
 				</section>
 			</div>

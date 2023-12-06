@@ -24,11 +24,12 @@
 	border-radius: 100%; /* Usar 50% para obtener un círculo perfecto con border-radius */
 	margin: 2dvh 2dvw 10dvh 2dvw; /* Simplificar el margen */
 }
-.list {
-	list-style: none;
-	margin: 0% 0% 0% 2%;
-	padding: 0px;
-	font-size: 300%;
+.listE {
+	font-size: 2em;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		transform: scale(1.1);
+	}
 }
 .rSide {
 	display: flex;
@@ -54,10 +55,9 @@
 }
 .name {
 	padding: 0% 0% 8% 8%;
-
-	font-weight: 100;
-	font-size: 3em; /* Tamaño base del texto */
-	width: 50dvh;
+	font-weight: 700;
+	font-size: 4em; /* Tamaño base del texto */
+	width: 60dvh;
 	margin: 10px 10px 2% 5%;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .linkedinLogo {
-	transition: 0.15s ease;
+	transition: all 0.2s ease-in-out;
 	margin: 0px 10px 0px 10px;
 }
 
@@ -79,7 +79,7 @@
 }
 
 .gitHubLogo {
-	transition: 0.15s ease;
+	transition: all 0.2s ease-in-out;
 	margin: 4px 10px 0px 10px;
 }
 
@@ -88,6 +88,7 @@
 	cursor: pointer;
 }
 .cv {
+	transition: all 0.2s ease-in-out;
 	margin: 0px;
 	margin-left: 40%;
 	margin-top: 22%;
@@ -99,11 +100,18 @@
 
 .personalDescription {
 	font-size: 150%;
-	margin: 0 0 0 5vw;
+	margin: 25dvh 0px 0px 5vw;
 	height: 100dvh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .projects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100dvh;
 }
 @media (max-width: 768px) {

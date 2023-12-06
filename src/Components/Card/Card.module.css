@@ -9,10 +9,12 @@
 	transition: all 0.2s ease;
 	border-radius: 5px;
 	margin: 5%;
+	filter: brightness(0.8);
 }
 
 .card:hover {
 	transform: scale(1.03);
+	filter: brightness(1);
 }
 
 .cardDeploy {
@@ -35,6 +37,7 @@
 	top: 37.5%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	filter: brightness(1);
 }
 
 .cardTop {
@@ -53,7 +56,7 @@
 
 .card:hover .cardTop img,
 .cardButton:hover ~ .cardTop img {
-	filter: brightness(0.6);
+	filter: brightness(1);
 }
 
 .cardButton {
