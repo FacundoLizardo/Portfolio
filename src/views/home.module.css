@@ -1,101 +1,8 @@
 .mainContainer {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	padding: 0px;
 	width: 99dvw;
-	height: fit-content;
-}
-.lSide {
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	width: 25dvw;
-	border: solid 2px black;
-	text-align: left;
-	align-items: center;
-	justify-content: center;
-	position: fixed;
-	margin: 0px;
-}
-
-.profilePic {
-	max-width: 50%; /* Hacer que la imagen no exceda el ancho del contenedor */
-	height: auto; /* Ajustar la altura proporcionalmente al ancho */
-	border-radius: 100%; /* Usar 50% para obtener un círculo perfecto con border-radius */
-	margin: 2dvh 2dvw 10dvh 2dvw; /* Simplificar el margen */
-}
-.listE {
-	font-size: 2em;
-	transition: all 0.2s ease-in-out;
-	&:hover {
-		transform: scale(1.1);
-	}
-}
-.rSide {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 75dvw;
-	margin-left: 25dvw;
-	padding: 10dvh 0dvw;
-}
-
-.head {
-	display: flex;
-	flex-direction: row;
-	width: 80%;
-	height: 100dvh;
-	align-items: center;
-	justify-content: center;
-	padding: 0px;
-}
-.nameAndLinks {
-	align-items: center;
-	justify-content: center;
-}
-.name {
-	padding: 0% 0% 8% 8%;
-	font-weight: 700;
-	font-size: 4em; /* Tamaño base del texto */
-	width: 60dvh;
-	margin: 10px 10px 2% 5%;
-}
-
-.links {
-	display: flex;
-	flex-direction: row;
-	margin: 0px;
-	justify-content: space-around;
-}
-
-.linkedinLogo {
-	transition: all 0.2s ease-in-out;
-	margin: 0px 10px 0px 10px;
-}
-
-.linkedinLogo:hover {
-	transform: scale(1.1);
-	cursor: pointer;
-}
-
-.gitHubLogo {
-	transition: all 0.2s ease-in-out;
-	margin: 4px 10px 0px 10px;
-}
-
-.gitHubLogo:hover {
-	transform: scale(1.1);
-	cursor: pointer;
-}
-.cv {
-	transition: all 0.2s ease-in-out;
-	margin: 0px;
-	margin-left: 40%;
-	margin-top: 22%;
-}
-.cv:hover {
-	transform: scale(1.1);
-	cursor: pointer;
 }
 
 .personalDescription {
@@ -114,9 +21,9 @@
 	align-items: center;
 	height: 100dvh;
 }
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 	.mainContainer {
-		flex-direction: row;
+		flex-direction: colum;
 	}
 
 	.lSide {
@@ -132,53 +39,6 @@
 		margin: 0px;
 		font-size: 1em;
 	}
-	.profilePic {
-		max-width: 20%; /* Hacer que la imagen no exceda el ancho del contenedor */
-		height: auto; /* Ajustar la altura proporcionalmente al ancho */
-		border-radius: 100%; /* Usar 50% para obtener un círculo perfecto con border-radius */
-		margin: 2% 0 2% 0; /* Simplificar el margen */
 
-		/* Estilos adicionales si lo deseas */
-		/*display: block;  Evitar espacio adicional debajo de la imagen */
-		margin-left: 0px; /* Centrar la imagen horizontalmente */
-		margin-right: 10%;
 	}
-	.head {
-		display: flex;
-		flex-direction: row;
-		width: 50%;
-		align-items: center;
-		justify-content: center;
-		padding: 0px;
-	}
-	.nameAndLinks {
-		align-items: center;
-		justify-content: center;
-	}
-	.links {
-		display: flex;
-		flex-direction: row;
-		margin: 0px;
-		justify-content: space-around;
-	}
-
-	.profilePic {
-		max-width: 20%; /* Hacer que la imagen no exceda el ancho del contenedor */
-		height: auto; /* Ajustar la altura proporcionalmente al ancho */
-		border-radius: 100%; /* Usar 50% para obtener un círculo perfecto con border-radius */
-		margin: 2% 0 2% 0; /* Simplificar el margen */
-
-		/* Estilos adicionales si lo deseas */
-		/*display: block;  Evitar espacio adicional debajo de la imagen */
-		margin-left: 0px; /* Centrar la imagen horizontalmente */
-		margin-right: 10%;
-	}
-	.name {
-		padding: 0;
-		font-weight: 100;
-		font-size: 3em; /* Tamaño base del texto */
-		margin-bottom: 2vh;
-		margin-top: 0;
-		font-size: 1em;
-	}
-}
+}*/
