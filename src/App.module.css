@@ -1,4 +1,4 @@
-.mainContainer {
+/* .mainContainer {
 	display: flex;
 	flex-direction: column;
 	min-height: 100dvh;
@@ -9,7 +9,7 @@
 	align-items: center;
 	padding-top: 0vh;
 	margin: 0px;
-}
+} */
 
 /* Reset styles */
 * {
@@ -21,7 +21,7 @@
 /* Global configuration */
 :root {
 	/* Background colors */
-	--bg-color: #0d0a12;
+	--bg-color: #a98adc;
 	--bg-color-off: #191424;
 
 	/* Text colors */

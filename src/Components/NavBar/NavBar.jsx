@@ -1,7 +1,7 @@
 import styles from "../NavBar/NavBar.module.css";
 import man from "../../../assets/Images/man.avif";
 import React, { useState } from "react";
-import Modal from "react-modal";
+
 export const NavBar = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -20,58 +20,69 @@ export const NavBar = () => {
 	};
 	return (
 		<>
-			<div className={styles.lSide}>
-				<img src={man} className={styles.profilePic} />
-				<button onClick={openModal} className={styles.openModalButton}>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="icon icon-tabler icon-tabler-menu-2"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						stroke-width="2"
-						stroke="currentColor"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
+			<div className={styles.navBarContainer}>
+				<nav>
+					<div className={styles.profilePic}>
+						<img src={man} />
+					</div>
+					<div
+						className={`${styles.navbarLinks} ${
+							isModalOpen ? styles.active : ""
+						}`}
 					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-						<path d="M4 6l16 0" />
-						<path d="M4 12l16 0" />
-						<path d="M4 18l16 0" />
-					</svg>
-				</button>
-			</div>
+						<ul>
+							<li>
+								<a onClick={() => scrollToSection(sectionHead)}>Links</a>
+							</li>
+							<li>
+								<a onClick={() => scrollToSection(sectionDescirption)}>
+									Sobre mi
+								</a>
+							</li>
+							<li>
+								<a onClick={() => scrollToSection(sectionProjects)}>
+									Proyectos
+								</a>
+							</li>
+							<li>
+								<a>Tecnologías</a>
+							</li>
+						</ul>
+					</div>
 
-			<Modal
-				isOpen={isModalOpen}
-				onRequestClose={closeModal}
-				contentLabel="Ejemplo Modal"
-				className={styles.modal}
-			>
-				<button onClick={closeModal} className={styles.closeModalButton}>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="icon icon-tabler icon-tabler-square-rounded-x"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						stroke-width="2"
-						stroke="white"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-						<path d="M10 10l4 4m0 -4l-4 4" />
-						<path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
-					</svg>
-				</button>
-				<h3 onClick={() => scrollToSection(sectionHead)}>Links</h3>
-				<h3 onClick={() => scrollToSection(sectionDescirption)}>Sobre mi</h3>
-				<h3 onClick={() => scrollToSection(sectionProjects)}>Proyectos</h3>
-				<h3>Tecnologías</h3>
-			</Modal>
+					<div>
+						{isModalOpen ? (
+							<button onClick={closeModal} className={styles.closeModalButton}>
+								{" "}
+								<svg viewBox="0 0 24 24">
+									<path
+										fill="none"
+										stroke="#ffffff"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M4 8h9m-9 4h16m0 0l-3-3m3 3l-3 3M4 16h9"
+									/>
+								</svg>
+							</button>
+						) : (
+							<button onClick={openModal} className={styles.openModalButton}>
+								{" "}
+								<svg viewBox="0 0 24 24">
+									<path
+										fill="none"
+										stroke="#ffffff"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M20 8h-9m9 4H4m0 0l3-3m-3 3l3 3m13 1h-9"
+									/>
+								</svg>
+							</button>
+						)}
+					</div>
+				</nav>
+			</div>
 		</>
 	);
 };
