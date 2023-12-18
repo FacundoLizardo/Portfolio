@@ -21,12 +21,12 @@
 /* Global configuration */
 :root {
 	/* Background colors */
-	--bg-color: #a98adc;
-	--bg-color-off: #191424;
+	--bg-color: #373143;
+	--bg-color-off: #34313c;
 
 	/* Text colors */
 	--text-primary-color: #ededed;
-	--text-secondary-color: #a6adbb;
+	--text-secondary-color: #000000;
 
 	/* Primary colors */
 	--primary-color: #450399;

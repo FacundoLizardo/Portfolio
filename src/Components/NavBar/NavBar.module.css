@@ -1,13 +1,16 @@
 .navBarContainer {
-	position: relative;
+	position: fixed;
 	display: flex;
 	width: 100vw;
 	height: 10dvh;
+	background-color: var(--bg-color-off);
 	border-bottom: solid 2px black;
 	align-items: center;
 	padding: 5%;
+	transition: top 0.35s ease;
 	& button {
-		background-color: rgba(0, 0, 0, 1);
+		background: none;
+		border: none;
 	}
 }
 
@@ -38,21 +41,100 @@
 
 .navbarLinks {
 	opacity: 0;
+	animation: closeModal 300ms ease-in-out;
+	& ul li {
+		padding: 5dvh;
+	}
+}
+
+@keyframes closeModal {
+	from {
+		position: absolute;
+		opacity: 1;
+		background-color: var(--bg-color-off);
+		display: flex;
+		width: 100%;
+		min-height: 100dvh;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 1.5rem;
+		top: 0;
+		left: 0;
+		transform: translateX(0);
+	}
+	to {
+		position: absolute;
+		opacity: 0;
+		background-color: var(--bg-color-off);
+		display: flex;
+		width: 100%;
+		min-height: 100dvh;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 1.5rem;
+		top: 0;
+		left: 0;
+		transform: translateX(100%);
+	}
 }
 .navbarLinks.active {
 	position: absolute;
 	opacity: 1;
-	background-color: aqua;
+	background-color: var(--bg-color-off);
 	display: flex;
 	width: 100%;
 	min-height: 100dvh;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	font-size: 1.5rem;
 	top: 0;
 	left: 0;
+	animation: menu 300ms ease-in-out;
+	& ul li {
+		padding: 5dvh;
+	}
 }
 
+@keyframes menu {
+	from {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.openModalButton {
+	animation: modalButtonOpen 300ms ease-in-out;
+}
 .closeModalButton {
 	position: relative;
 	z-index: 99;
+	border: none;
+	animation: modalButtonClose 300ms ease-in-out;
+}
+
+@keyframes modalButtonClose {
+	from {
+		transform: rotateY(180deg);
+	}
+
+	to {
+		transform: rotateY(0deg);
+	}
+}
+
+@keyframes modalButtonOpen {
+	from {
+		transform: rotateY(180deg);
+	}
+
+	to {
+		transform: rotateY(0deg);
+	}
 }

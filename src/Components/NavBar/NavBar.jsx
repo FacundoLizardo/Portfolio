@@ -18,9 +18,21 @@ export const NavBar = () => {
 			ref.current.scrollIntoView({ behavior: "smooth" });
 		}
 	};
+
+	let prevScrollpos = window.scrollY;
+	window.onscroll = function () {
+		console.log(document.getElementById("navBar"));
+		let currentScrollPos = window.scrollY;
+		if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navBar").style.top = "0";
+		} else {
+			document.getElementById("navBar").style.top = "-100px";
+		}
+		prevScrollpos = currentScrollPos;
+	};
 	return (
 		<>
-			<div className={styles.navBarContainer}>
+			<div id="navBar" className={styles.navBarContainer}>
 				<nav>
 					<div className={styles.profilePic}>
 						<img src={man} />
@@ -32,20 +44,18 @@ export const NavBar = () => {
 					>
 						<ul>
 							<li>
-								<a onClick={() => scrollToSection(sectionHead)}>Links</a>
+								<a onClick={() => scrollToSection(sectionHead)}>LINKS</a>
 							</li>
 							<li>
 								<a onClick={() => scrollToSection(sectionDescirption)}>
-									Sobre mi
+									ABOUT ME
 								</a>
 							</li>
 							<li>
-								<a onClick={() => scrollToSection(sectionProjects)}>
-									Proyectos
-								</a>
+								<a onClick={() => scrollToSection(sectionProjects)}>PROJECTS</a>
 							</li>
 							<li>
-								<a>Tecnologías</a>
+								<a>TECNOLOGIES</a>
 							</li>
 						</ul>
 					</div>
