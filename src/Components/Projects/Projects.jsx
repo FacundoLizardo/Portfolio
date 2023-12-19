@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 import Style from "../Projects/Projects.module.css";
 import PI from "../../../assets/Images/ProjetImages/PI.jpg";
 
-const Projects = () => {
+export const Projects = () => {
 	const listProjects = [
 		{
 			id: 1,
@@ -27,11 +27,10 @@ const Projects = () => {
 	];
 
 	return (
-		<div className={Style.mainContainer}>
+		<div className={Style.projects} id="projects">
 			{listProjects.map((project) => {
 				return <Card project={project} key={project.id} />;
 			})}
 		</div>
 	);
 };
-export default Projects;

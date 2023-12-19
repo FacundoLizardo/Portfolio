@@ -1,53 +1,17 @@
-@media (min-width: 768px) {
-	.card {
-		width: 40%;
-	}
-}
-
 .card {
-	width: 350px;
+	position: static;
+	width: 80%px;
 	height: auto;
 	overflow: hidden;
-
 	font-size: 12px;
-	color: black;
-	position: relative;
 	transition: all 0.2s ease;
 	border-radius: 5px;
 	margin: 5%;
-	filter: brightness(0.8);
-}
-
-.card:hover {
-	transform: scale(1.03);
-	filter: brightness(1);
-}
-
-.cardDeploy {
-	display: none;
-	cursor: pointer;
-	border: solid 2px black;
-	margin: 5px;
-}
-
-.cardDeploy a svg {
-	width: 50px;
-	height: 50px;
-	color: white;
-}
-
-.card:hover .cardDeploy {
-	display: flex;
-	position: absolute;
-	z-index: 99;
-	top: 37.5%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	filter: brightness(1);
+	padding: 10px;
 }
 
 .cardTop {
-	position: relative;
+	position: static;
 	width: 100%;
 	height: 70%;
 }
@@ -60,12 +24,7 @@
 	border-radius: 5px;
 }
 
-.card:hover .cardTop img,
-.cardButton:hover ~ .cardTop img {
-	filter: brightness(1);
-}
-
-.cardButton {
+.cardBottom {
 	display: flex;
 	justify-content: start;
 	align-items: center;
@@ -74,7 +33,7 @@
 	background-color: var(--bg-color);
 }
 
-.cardButton img {
+.cardBottom img {
 	width: 50px;
 	height: 50px;
 	margin-right: 12px;

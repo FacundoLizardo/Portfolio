@@ -1,26 +1,11 @@
 .mainContainer {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	padding: 0px;
-	width: 99dvw;
+	width: 100%;
 }
 
-.personalDescription {
-	font-size: 150%;
-	margin: 25dvh 0px 0px 5vw;
-	height: 100dvh;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.projects {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100dvh;
-}
 /*@media (max-width: 768px) {
 	.mainContainer {
 		flex-direction: colum;

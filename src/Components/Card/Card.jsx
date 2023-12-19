@@ -3,7 +3,7 @@ const Card = ({ project }) => {
 	const { id, title, img, url, logo } = project;
 
 	return (
-		<div className={style.card} key={project.id}>
+		<div className={style.card} key={id}>
 			<a href={url} target="_blank" rel="noopener noreferrer">
 				<div className={style.cardTop}>
 					{" "}
@@ -11,7 +11,7 @@ const Card = ({ project }) => {
 				</div>
 			</a>
 
-			<div className={style.cardButton}>
+			<div className={style.cardBottom}>
 				<img src={logo} alt={logo} />
 				<h3>{title} </h3>
 			</div>

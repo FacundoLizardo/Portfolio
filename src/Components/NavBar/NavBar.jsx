@@ -22,7 +22,8 @@ export const NavBar = () => {
 
 	let prevScrollpos = window.scrollY;
 	window.onscroll = function () {
-		let currentScrollPos = window.scrollY;
+		console.log(prevScrollpos);
+		const currentScrollPos = window.scrollY;
 		if (prevScrollpos > currentScrollPos) {
 			document.getElementById("navBar").style.top = "0";
 		} else {
@@ -30,6 +31,7 @@ export const NavBar = () => {
 		}
 		prevScrollpos = currentScrollPos;
 	};
+
 	return (
 		<>
 			<div id="navBar" className={styles.navBarContainer}>
@@ -44,13 +46,19 @@ export const NavBar = () => {
 					>
 						<ul>
 							<li>
-								<a href="#nameAndLinks">LINKS</a>
+								<a href="#nameAndLinks" onClick={() => closeModal()}>
+									LINKS
+								</a>
 							</li>
 							<li>
-								<a href="#aboutMe">ABOUT ME</a>
+								<a href="#aboutMe" onClick={() => closeModal()}>
+									ABOUT ME
+								</a>
 							</li>
 							<li>
-								<a>PROJECTS</a>
+								<a href="#projects" onClick={() => closeModal()}>
+									PROJECTS
+								</a>
 							</li>
 							<li>
 								<a>TECNOLOGIES</a>

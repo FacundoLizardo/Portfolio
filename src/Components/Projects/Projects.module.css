@@ -1,6 +1,11 @@
-.mainContainer {
-	height: 50%;
-	margin: 5%;
+.projects {
+	position: static;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	width: 90%;
+	height: 100dvh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: auto;
 }
