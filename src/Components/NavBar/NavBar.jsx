@@ -5,23 +5,23 @@ import React, { useState } from "react";
 export const NavBar = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
+	//Cancel scroll when the modal is open
+	const toggleScroll = (disable) => {
+		document.body.style.overflow = disable ? "hidden" : "visible";
+	};
+
 	const openModal = () => {
 		setIsModalOpen(true);
+		toggleScroll(true);
 	};
 
 	const closeModal = () => {
 		setIsModalOpen(false);
-	};
-	const scrollToSection = (ref) => {
-		console.log(ref);
-		if (ref.current) {
-			ref.current.scrollIntoView({ behavior: "smooth" });
-		}
+		toggleScroll(false);
 	};
 
 	let prevScrollpos = window.scrollY;
 	window.onscroll = function () {
-		console.log(document.getElementById("navBar"));
 		let currentScrollPos = window.scrollY;
 		if (prevScrollpos > currentScrollPos) {
 			document.getElementById("navBar").style.top = "0";
@@ -44,15 +44,13 @@ export const NavBar = () => {
 					>
 						<ul>
 							<li>
-								<a onClick={() => scrollToSection(sectionHead)}>LINKS</a>
+								<a href="#nameAndLinks">LINKS</a>
 							</li>
 							<li>
-								<a onClick={() => scrollToSection(sectionDescirption)}>
-									ABOUT ME
-								</a>
+								<a href="#aboutMe">ABOUT ME</a>
 							</li>
 							<li>
-								<a onClick={() => scrollToSection(sectionProjects)}>PROJECTS</a>
+								<a>PROJECTS</a>
 							</li>
 							<li>
 								<a>TECNOLOGIES</a>

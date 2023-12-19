@@ -1,20 +1,22 @@
 import styles from "../Name and Links/NameAndLinks.module.css";
-import { useRef } from "react";
 
 export const NameAndLinks = () => {
-	const sectionHead = useRef(null);
 	return (
 		<>
-			<div className={styles.nameAndLinks}>
+			<div className={styles.nameAndLinks} id="nameAndLinks">
 				<div className={styles.name}>
 					{" "}
-					<h2>Facundo Lizardo</h2>
+					<h1>Facundo Lizardo</h1>
 				</div>
 
 				<div className={styles.links}>
 					<ul>
 						<li>
-							<a href={""} target="_blank" rel="noopener noreferrer">
+							<a
+								href={"https://www.linkedin.com/in/facundolizardo/"}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<svg viewBox="0 0 666 680">
 									<path
 										fill="#ffffff"
@@ -24,7 +26,11 @@ export const NameAndLinks = () => {
 							</a>
 						</li>
 						<li>
-							<a href={""} target="_blank" rel="noopener noreferrer">
+							<a
+								href={"https://github.com/FacundoLizardo"}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<svg viewBox="0 0 2048 2048">
 									<path
 										fill="#ffffff"
@@ -33,8 +39,16 @@ export const NameAndLinks = () => {
 								</svg>
 							</a>
 						</li>
+
 						<li>
-							<a href={""} target="_blank" rel="noopener noreferrer">
+							<a
+								href={
+									"https://docs.google.com/document/d/1ZFe7vaJfPOXd_lmddXrbIjsafCzxjSk5vcgBnBeCY9I/edit"
+								}
+								target="_blank"
+								rel="noopener noreferrer"
+								alt="asd"
+							>
 								<svg viewBox="0 0 14 14">
 									<g fill="none" stroke="#ffffff" stroke-linecap="round">
 										<path
