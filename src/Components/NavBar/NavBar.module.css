@@ -120,6 +120,7 @@
 }
 .openModalButton {
 	animation: modalButtonOpen 300ms ease-in-out;
+	border: none;
 }
 .closeModalButton {
 	position: relative;
