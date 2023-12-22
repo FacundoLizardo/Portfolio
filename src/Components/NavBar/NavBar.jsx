@@ -1,5 +1,5 @@
 import styles from "../NavBar/NavBar.module.css";
-import man from "../../../assets/Images/man.avif";
+
 import React, { useState } from "react";
 
 export const NavBar = () => {

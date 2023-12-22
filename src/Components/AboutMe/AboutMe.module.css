@@ -1,19 +1,45 @@
 .aboutMeContainer {
 	display: flex;
 	flex-direction: column;
-	width: 60%;
+	width: 90%;
 	height: auto;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	margin: auto;
-	padding: var(--pd-1) 0px var(--pd-1) 0px;
-	gap: 2dvh;
+	padding: var(--pd-1) var(--pd-0);
+	border-radius: var(--radius);
+	gap: 3dvh;
+	background-color: var(--box-color);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+	& .imageAndName {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2dvh;
+		height: auto;
+
+		& .image {
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			overflow: hidden;
+			& img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 	& a {
-		font-weight: 800;
+		text-decoration: 2px underline;
+		border-radius: var(--radius);
+		padding: 0px 2px 0px 2px;
+		font-weight: 600;
+		margin-bottom: 4px;
 	}
 
-	& p :first {
-		text-align: left;
+	& p {
+		text-align: center;
 	}
 }
