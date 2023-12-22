@@ -1,49 +1,62 @@
 .nameAndLinks {
 	width: 90%;
-	min-height: 90dvh;
+	min-height: 100dvh;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 8dvh;
+	padding-bottom: var(--pd-1);
+	text-align: center;
 
+	& .text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	& p {
+		text-align: center;
+		margin-top: var(--pd-0);
+		width: 70%;
+	}
+
+	& .linksContainer {
+		display: flex;
+		flex-direction: column;
+		gap: 2dvh;
+		border-radius: var(--radius);
+		background-color: var(--box-color);
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+		padding: var(--pd-0);
+	}
 	& .links {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
+		gap: 2dvh;
 
-	& .links ul {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 5dvw;
-	}
-
-	& .links li {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 15%;
-		height: 15%;
-	}
-
-	& .links svg {
-		width: 90%;
-		max-width: 65px;
-		height: 90%;
-		max-height: 65px;
-	}
-}
-
-.name {
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	& h1 {
-		font-size: var(--fs-h1);
+		& ul {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 5dvw;
+		}
+		& li {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 15%;
+			height: 15%;
+		}
+		& svg {
+			width: 90%;
+			max-width: 65px;
+			height: 90%;
+			max-height: 65px;
+		}
 	}
 }

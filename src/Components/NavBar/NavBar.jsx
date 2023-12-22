@@ -71,7 +71,9 @@ export const NavBar = () => {
 								</a>
 							</li>
 							<li>
-								<a>TECNOLOGIES</a>
+								<a href="#technologies" onClick={() => closeModal()}>
+									TECNOLOGIES
+								</a>
 							</li>
 						</ul>
 					</div>

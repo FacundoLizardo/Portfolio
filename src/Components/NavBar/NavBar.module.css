@@ -3,7 +3,7 @@
 	display: flex;
 	width: 100vw;
 	height: 10dvh;
-	background-color: var(--bg-color-off);
+	background-color: var(--bg-color);
 	border-bottom: solid 2px black;
 	align-items: center;
 	padding: 1dvh;

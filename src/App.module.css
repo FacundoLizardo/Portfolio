@@ -21,19 +21,20 @@
 /* Global configuration */
 :root {
 	/* Background colors */
-	--bg-color: #373143;
-	--bg-color-off: #34313c;
+	--bg-color: #1f1d1e;
+	--bg-color-off: #a6adbb;
 
 	/* Text colors */
 	--text-primary-color: #ffffff;
 	--text-secondary-color: #d7d7d7;
 
 	/* Primary colors */
-	--primary-color: #450399;
-	--secondary-color: #ff8c00;
+	--primary-color: #004298;
+	--secondary-color: #230dac;
+	--box-color: hsla(0, 0%, 69%, 0.4);
 
 	/* Border colors */
-	--border: #333;
+	--border: #161616;
 	--border-off: #a6adbb;
 
 	/* Other */

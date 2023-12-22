@@ -1,32 +1,48 @@
 .technologies {
-	position: static;
-	width: 60%;
+	width: 70%;
+	height: 100dvh;
 	margin: auto;
 	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: var(--pd-1) 0px var(--pd-1) 0px;
 }
 
 .container {
-	position: static;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-	gap: 5%;
+	gap: 5dvh;
+	padding: 5%;
+	border-radius: var(--radius);
 	width: 100%;
+	height: auto;
+	margin: auto;
+	background-color: var(--box-color);
 }
 
 .tec {
-	position: relative;
 	display: flex;
 	flex-direction: row;
 	padding-left: 20%;
 	align-items: center;
+	max-height: 100px;
 	background-color: rgb(60, 60, 60, 0.3);
 	border-radius: 5%;
 
 	& .tecLogo {
-		padding: 5px;
-		transform: scale(1.8);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		font-size: 28px;
+		font-weight: 650;
 	}
-
+	& .tecLogo svg {
+		width: 100%;
+		height: auto;
+	}
 	& .tecText {
 		margin: 2dvh;
 	}

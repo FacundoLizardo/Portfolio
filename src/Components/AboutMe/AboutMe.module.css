@@ -1,9 +1,19 @@
 .aboutMeContainer {
 	display: flex;
-	width: 90%;
-	height: 100dvh;
+	flex-direction: column;
+	width: 60%;
+	height: auto;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	margin: auto;
+	padding: var(--pd-1) 0px var(--pd-1) 0px;
+	gap: 2dvh;
+	& a {
+		font-weight: 800;
+	}
+
+	& p :first {
+		text-align: left;
+	}
 }
