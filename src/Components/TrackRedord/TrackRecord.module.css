@@ -28,6 +28,7 @@
 		justify-content: center;
 		gap: 2dvh;
 		text-align: center;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 	}
 
 	& .arrow {
@@ -52,5 +53,6 @@
 		justify-content: center;
 		gap: 2dvh;
 		text-align: center;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 	}
 }

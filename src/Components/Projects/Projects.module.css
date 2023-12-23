@@ -1,11 +1,14 @@
 .projects {
 	display: flex;
 	flex-direction: column;
-	width: 90%;
-	height: 90dvh;
-
 	align-items: center;
-	text-align: center;
+	justify-content: center;
+	border-radius: var(--radius);
+	width: 90%;
+	height: auto;
 	margin: auto;
-	padding: var(--pd-2) 0px var(--pd-1) 0px;
+	margin-top: var(--pd-1);
+	margin-bottom: var(--pd-2);
+	background-color: rgb(255, 255, 255, 0.1);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }

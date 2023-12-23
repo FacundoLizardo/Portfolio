@@ -1,32 +1,27 @@
-.technologies {
-	width: 90%;
-	margin: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: var(--pd-1) 0px var(--pd-2) 0px;
-}
-
-.container {
+.technologiesContainer {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-	gap: 5dvh;
-	padding: 5%;
+	gap: 3dvh;
+	padding: var(--pd-0);
 	border-radius: var(--radius);
-	width: 100%;
+	width: 90%;
 	height: auto;
 	margin: auto;
-	background-color: var(--box-color);
+	margin-top: var(--pd-1);
+	margin-bottom: var(--pd-0);
+	background-color: rgb(255, 255, 255, 0.1);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .tec {
 	display: flex;
 	flex-direction: row;
-	padding-left: 20%;
+	padding-left: 22%;
 	align-items: center;
 	max-height: 100px;
-	background-color: rgb(60, 60, 60, 0.3);
-	border-radius: 5%;
+	background-color: var(--box-color);
+	border-radius: var(--radius-i);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 
 	& .tecLogo {
 		display: flex;
