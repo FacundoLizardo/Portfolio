@@ -1,0 +1,52 @@
+.trackRecordContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: var(--radius);
+	width: 90%;
+	height: auto;
+	margin: auto;
+	margin-top: var(--pd-2);
+	margin-bottom: var(--pd-2);
+	gap: 2dvh;
+	background-color: rgb(255, 255, 255, 0.1);
+
+	& h3 {
+		text-align: center;
+	}
+	& .theTop {
+		display: flex;
+		flex-direction: column;
+		background-color: var(--box-color);
+		border-radius: var(--radius);
+		padding: var(--pd-0);
+		align-items: center;
+		justify-content: center;
+		gap: 2dvh;
+		text-align: center;
+	}
+
+	& .arrow {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 30px;
+		width: 30px;
+		ba & svg {
+			height: auto;
+		}
+	}
+
+	& .construction {
+		display: flex;
+		flex-direction: column;
+		background-color: var(--box-color);
+		border-radius: var(--radius);
+		padding: var(--pd-0);
+		align-items: center;
+		justify-content: center;
+		gap: 2dvh;
+		text-align: center;
+	}
+}

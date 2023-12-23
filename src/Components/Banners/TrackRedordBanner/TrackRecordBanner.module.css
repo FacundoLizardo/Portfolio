@@ -1,0 +1,14 @@
+.TrackRecordBannerContainer {
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+	width: 100%;
+	background-color: var(--primary-color);
+	& div {
+		height: auto;
+
+		& svg {
+			height: 100%;
+		}
+	}
+}

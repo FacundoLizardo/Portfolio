@@ -66,6 +66,11 @@ export const NavBar = () => {
 								</a>
 							</li>
 							<li>
+								<a href="#trackRecord" onClick={() => closeModal()}>
+									TRACK RECORD
+								</a>
+							</li>
+							<li>
 								<a href="#projects" onClick={() => closeModal()}>
 									PROJECTS
 								</a>
