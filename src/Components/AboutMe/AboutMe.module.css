@@ -7,9 +7,11 @@
 	align-items: center;
 	text-align: center;
 	margin: auto;
+	margin-top: var(--pd-0);
+	margin-bottom: var(--pd-2);
 	padding: var(--pd-1) var(--pd-0);
 	border-radius: var(--radius);
-	gap: 3dvh;
+	gap: 1dvh;
 	background-color: var(--box-color);
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 

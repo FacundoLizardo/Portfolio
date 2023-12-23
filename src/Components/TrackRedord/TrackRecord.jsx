@@ -4,7 +4,7 @@ export const TrackRecord = () => {
 	return (
 		<section id="trackRecord" className={styles.trackRecordContainer}>
 			<div className={styles.theTop}>
-				<h3>Mar 2016 - Jan 2020</h3>
+				<h3>Mar 2016 → Jan 2020</h3>
 				<p>
 					After finishing high school, I get my first job at The Top (Wine
 					Store).
@@ -40,7 +40,7 @@ export const TrackRecord = () => {
 				</svg>
 			</div>
 			<div className={styles.construction}>
-				<h3>May 2020 - Mar 2023</h3>
+				<h3>May 2020 → Mar 2023</h3>
 				<p>
 					Over those almost 3 years, I faced the challenge of entering a sector
 					about which I had no knowledge.

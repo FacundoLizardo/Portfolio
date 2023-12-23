@@ -7,10 +7,12 @@
 	width: 90%;
 	height: auto;
 	margin: auto;
-	margin-top: var(--pd-2);
+	margin-top: var(--pd-1);
 	margin-bottom: var(--pd-2);
+	padding: var(--pd-0) 0px var(--pd-0) 0px;
 	gap: 2dvh;
 	background-color: rgb(255, 255, 255, 0.1);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 
 	& h3 {
 		text-align: center;
@@ -18,8 +20,9 @@
 	& .theTop {
 		display: flex;
 		flex-direction: column;
+		width: 90%;
 		background-color: var(--box-color);
-		border-radius: var(--radius);
+		border-radius: var(--radius-i);
 		padding: var(--pd-0);
 		align-items: center;
 		justify-content: center;
@@ -41,8 +44,9 @@
 	& .construction {
 		display: flex;
 		flex-direction: column;
+		width: 90%;
 		background-color: var(--box-color);
-		border-radius: var(--radius);
+		border-radius: var(--radius-i);
 		padding: var(--pd-0);
 		align-items: center;
 		justify-content: center;

@@ -1,4 +1,4 @@
-.TrackRecordBannerContainer {
+.stackBanner {
 	display: flex;
 	flex-direction: row;
 	height: 50px;

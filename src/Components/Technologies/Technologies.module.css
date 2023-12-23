@@ -1,12 +1,10 @@
 .technologies {
-	width: 70%;
-	height: 100dvh;
+	width: 90%;
 	margin: auto;
-	padding: 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: var(--pd-1) 0px var(--pd-1) 0px;
+	padding: var(--pd-1) 0px var(--pd-2) 0px;
 }
 
 .container {

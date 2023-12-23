@@ -1,7 +1,8 @@
-import styles from "./TrackRecordBanner.module.css";
-export const TrackRecordBanner = () => {
+import styles from "./ProjectsBanner.module.css";
+
+export const ProjectsBanner = () => {
 	return (
-		<div className={styles.TrackRecordBannerContainer}>
+		<div className={styles.projectsBanner}>
 			<div>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +21,7 @@ export const TrackRecordBanner = () => {
 				</svg>
 			</div>
 			<div>
-				<h3>MY TRACK RECORD</h3>
+				<h3>CHECK OUT MY PROJECTS</h3>
 			</div>
 			<div>
 				<svg

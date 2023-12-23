@@ -1,5 +1,6 @@
 import educaStreamImg from "../../../assets/Images/ProjetImages/Educastream.jpg";
 import imgEducaStreamLogo from "../../../assets/Images/imgLogos/educaStreamLogo.png";
+import countries from "../../../assets/Images/imgLogos/countries.webp";
 import Card from "../Card/Card";
 import Style from "../Projects/Projects.module.css";
 import PI from "../../../assets/Images/ProjetImages/PI.jpg";
@@ -22,7 +23,7 @@ export const Projects = () => {
 			img: PI,
 			url: "https://educastream.vercel.app/",
 
-			logo: imgEducaStreamLogo,
+			logo: countries,
 		},
 	];
 
