@@ -3,28 +3,6 @@ import styles from "./TrackRecord.module.css";
 export const TrackRecord = () => {
 	return (
 		<section id="trackRecord" className={styles.trackRecordContainer}>
-			<div className={styles.theTop}>
-				<h3>Mar 2016 → Jan 2020</h3>
-				<p>
-					After finishing high school, I get my first job at The Top (Wine
-					Store).
-				</p>
-				<p>
-					After a year, my boss offered me a partnership. Through hard work and
-					study, we open three branches in different cities.
-				</p>
-				<p>
-					During this time, I acquired skills in customer service, accounting,
-					supplier management, stock control, employee recruitment, and team
-					building, among others.
-				</p>
-				<p>
-					After taking charge of all the responsibilities for a while,since my
-					partner had a baby with many illnesses, and the country's economy was
-					worsening.
-				</p>
-				<p> Unfortunately, we decided it was time to stop.</p>
-			</div>
 			<div className={styles.arrow}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -59,6 +37,28 @@ export const TrackRecord = () => {
 					different countries and cultures, much like our clients, making it a
 					truly challenging experience.
 				</p>
+			</div>
+			<div className={styles.theTop}>
+				<h3>Mar 2016 → Jan 2020</h3>
+				<p>
+					After finishing high school, I get my first job at The Top (Wine
+					Store).
+				</p>
+				<p>
+					After a year, my boss offered me a partnership. Through hard work and
+					study, we open three branches in different cities.
+				</p>
+				<p>
+					During this time, I acquired skills in customer service, accounting,
+					supplier management, stock control, employee recruitment, and team
+					building, among others.
+				</p>
+				<p>
+					After taking charge of all the responsibilities for a while,since my
+					partner had a baby with many illnesses, and the country's economy was
+					worsening.
+				</p>
+				<p> Unfortunately, we decided it was time to stop.</p>
 			</div>
 		</section>
 	);
