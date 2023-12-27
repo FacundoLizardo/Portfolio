@@ -5,6 +5,7 @@
 	justify-content: center;
 	border-radius: var(--radius);
 	width: 90%;
+	max-width: var(--max-width);
 	height: auto;
 	margin: auto;
 	margin-top: var(--pd-1);
@@ -27,7 +28,7 @@
 		align-items: center;
 		justify-content: center;
 		gap: 2dvh;
-		text-align: center;
+		text-align: left;
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 	}
 
@@ -52,7 +53,7 @@
 		align-items: center;
 		justify-content: center;
 		gap: 2dvh;
-		text-align: center;
+		text-align: left;
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 	}
 }

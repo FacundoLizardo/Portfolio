@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 90%;
+	max-width: var(--max-width);
 	height: auto;
 	justify-content: center;
 	align-items: center;
@@ -11,7 +12,7 @@
 	margin-bottom: var(--pd-2);
 	padding: var(--pd-1) var(--pd-0);
 	border-radius: var(--radius);
-	gap: 1dvh;
+	gap: 5dvh;
 	background-color: var(--box-color);
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 
@@ -33,15 +34,16 @@
 			}
 		}
 	}
+	& article {
+		text-align: right;
+	}
 	& a {
 		text-decoration: 2px underline;
-		border-radius: var(--radius);
-		padding: 0px 2px 0px 2px;
-		font-weight: 600;
-		margin-bottom: 4px;
+		font-weight: 800;
 	}
 
 	& p {
-		text-align: center;
+		text-align: left;
+		margin-bottom: var(--pd-0);
 	}
 }

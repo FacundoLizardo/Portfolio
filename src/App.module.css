@@ -30,6 +30,7 @@
 	--pd-0: 16px;
 	--pd-1: 32px;
 	--pd-2: 64px;
+	--max-width: 768px;
 
 	/* Font sizes */
 	--font-size-base: 1.5625rem;
