@@ -5,6 +5,7 @@
 	padding: var(--pd-0);
 	border-radius: var(--radius);
 	width: 90%;
+	max-width: 980px;
 	height: auto;
 	margin: auto;
 	margin-top: var(--pd-1);

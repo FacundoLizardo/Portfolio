@@ -5,6 +5,7 @@
 	justify-content: center;
 	border-radius: var(--radius);
 	width: 90%;
+	min-height: 85dvh;
 	height: auto;
 	margin: auto;
 	margin-top: var(--pd-1);

@@ -20,18 +20,22 @@ export const NavBar = () => {
 		toggleScroll(false);
 	};
 
-	let prevScrollpos = window.scrollY;
-	window.onscroll = function () {
-		console.log(prevScrollpos);
-		const currentScrollPos = window.scrollY;
-		if (prevScrollpos > currentScrollPos) {
-			document.getElementById("navBar").style.top = "0";
-		} else {
-			document.getElementById("navBar").style.top = "-100px";
-		}
-		prevScrollpos = currentScrollPos;
-	};
+	if (window.innerWidth >= 1024) {
+		let prevScrollpos = window.scrollY;
 
+		window.onscroll = function () {
+			console.log(prevScrollpos);
+			const currentScrollPos = window.scrollY;
+
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("navBar").style.top = "0";
+			} else {
+				document.getElementById("navBar").style.top = "-100px";
+			}
+
+			prevScrollpos = currentScrollPos;
+		};
+	}
 	return (
 		<>
 			<div id="navBar" className={styles.navBarContainer}>
