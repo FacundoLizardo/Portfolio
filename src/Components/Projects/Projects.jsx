@@ -21,7 +21,7 @@ export const Projects = () => {
 			title: "Individual Project",
 
 			img: PI,
-			url: "https://educastream.vercel.app/",
+			url: "https://countries-facundo.vercel.app/",
 
 			logo: countries,
 		},

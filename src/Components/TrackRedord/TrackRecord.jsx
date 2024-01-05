@@ -60,6 +60,11 @@ export const TrackRecord = () => {
 				</p>
 				<p> Unfortunately, we decided it was time to stop.</p>
 			</div>
+
+			<div>
+				<div></div>
+				<div></div>
+			</div>
 		</section>
 	);
 };

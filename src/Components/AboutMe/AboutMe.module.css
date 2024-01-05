@@ -46,4 +46,26 @@
 		text-align: left;
 		margin-bottom: var(--pd-0);
 	}
+	.certifications {
+		display: flex;
+		flex-direction: row;
+		height: 75px;
+		width: 100%;
+		align-items: center;
+		justify-content: space-evenly;
+		margin: 0px;
+		padding: 0px;
+		div {
+			border-radius: 50%;
+			overflow: hidden;
+			height: 75px;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+			border: solid 2px rgb(255, 255, 255, 0.5);
+			& img {
+				height: 100%;
+				width: 100%;
+				opacity: 0.7;
+			}
+		}
+	}
 }

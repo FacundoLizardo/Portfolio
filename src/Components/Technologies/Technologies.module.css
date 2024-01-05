@@ -1,6 +1,6 @@
 .technologiesContainer {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
 	gap: 3dvh;
 	padding: var(--pd-0);
 	border-radius: var(--radius);

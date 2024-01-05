@@ -56,4 +56,11 @@
 		text-align: left;
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 	}
+
+	.certifications {
+		height: 20%;
+		div {
+			border-radius: 50%;
+		}
+	}
 }
