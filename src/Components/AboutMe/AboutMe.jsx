@@ -27,15 +27,7 @@ export const AboutMe = () => {
 					to Argentina from the United States.
 				</p>
 				<p className={styles.p4}>
-					I spent three years in the USA learning my second language,{" "}
-					<a
-						href="https://www.efset.org/cert/ji2hLU"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						English
-					</a>
-					.
+					I spent three years in the USA learning my second language, English.
 				</p>
 				<p className={styles.p5}>
 					{" "}

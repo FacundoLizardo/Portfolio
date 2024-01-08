@@ -37,10 +37,6 @@
 	& article {
 		text-align: right;
 	}
-	& a {
-		text-decoration: 2px underline;
-		font-weight: 800;
-	}
 
 	& p {
 		text-align: left;
@@ -64,7 +60,6 @@
 			& img {
 				height: 100%;
 				width: 100%;
-				opacity: 0.7;
 			}
 		}
 	}
