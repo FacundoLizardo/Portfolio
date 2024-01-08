@@ -48,10 +48,12 @@
 		height: 75px;
 		width: 100%;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-evenly;
 		margin: 0px;
 		padding: 0px;
 		div {
+			height: 100%;
+			width: auto;
 			border-radius: 50%;
 			overflow: hidden;
 			height: 75px;
